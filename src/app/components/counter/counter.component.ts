@@ -18,6 +18,6 @@ export class CounterComponent {
 
   decrement() {
     this.count--;
-    this.countChange.emit(this.count);
+    //this.countChange.emit(this.count);
   }
 }
