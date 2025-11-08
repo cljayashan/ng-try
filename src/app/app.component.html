@@ -4,4 +4,14 @@
 <hr />
 <app-counter [count]="parentCount" (countChange)="parentCount = $event"></app-counter> -->
 
-<app-calculator></app-calculator>
+<!-- <app-calculator></app-calculator> -->
+
+<app-autocomplete
+  [label]="'Users'"
+  [placeholder]="'Start typing...'"
+  [autoCompleteControl]="autoCompleteDataSetCtrl"
+  [options]="names"
+  [filterProperty]="'value'"
+  (selectedOptionChanged)="onOptionChanged($event)"
+  (searchKeyChanged)="onSearchValueChanged($event)"
+></app-autocomplete>

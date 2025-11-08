@@ -1,4 +1,5 @@
 import { Component, EventEmitter, Input, Output } from '@angular/core';
+import { FormControl, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-counter',
@@ -20,4 +21,8 @@ export class CounterComponent {
     this.count--;
     //this.countChange.emit(this.count);
   }
+
+
+
+
 }
