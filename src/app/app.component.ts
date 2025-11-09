@@ -37,11 +37,12 @@ export class AppComponent {
       key: item.id,
       value: item.name,
     }));
-    console.log('names loaded:', this.names);
+    //console.log('names loaded:', this.names);
   }
 
   onOptionChanged(selectedOption: KeyValue<string, string>) {
     console.log('selected option changed in parent component:', selectedOption);
+    console.log(`You selected: ${selectedOption.value} (ID: ${selectedOption.key})`);
   }
 
   onSearchValueChanged(value: string) {
